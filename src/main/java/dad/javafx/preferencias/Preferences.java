@@ -42,7 +42,7 @@ public class Preferences {
 	// en el constructor ponemos la configuración por defecto
 	public Preferences() {
 		setTheme("Dark");
-		setLocale(new Locale("es"));
+		setLocale(Locale.getDefault());
 	}
 		
 	private ObjectProperty<String> theme = new SimpleObjectProperty<>();

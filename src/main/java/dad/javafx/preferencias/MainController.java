@@ -45,7 +45,7 @@ public class MainController implements Initializable {
 
 	private void onEditPreferences(ActionEvent e) {
 
-		ListProperty<String> themes = new SimpleListProperty<>(FXCollections.observableArrayList("Dark", "Clear", "Canary"));
+		ListProperty<Theme> themes = new SimpleListProperty<>(FXCollections.observableArrayList(Theme.values()));
 		ListProperty<Locale> languages = new SimpleListProperty<>(FXCollections.observableArrayList(Locale.ENGLISH, new Locale("es"), Locale.FRENCH));
 
 		PreferencesFx preferencesFx = PreferencesFx.of(

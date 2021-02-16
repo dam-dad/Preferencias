@@ -41,22 +41,22 @@ public class Preferences {
 
 	// en el constructor ponemos la configuración por defecto
 	public Preferences() {
-		setTheme("Dark");
+		setTheme(Theme.DARK);
 		setLocale(Locale.getDefault());
 	}
 		
-	private ObjectProperty<String> theme = new SimpleObjectProperty<>();
+	private ObjectProperty<Theme> theme = new SimpleObjectProperty<>();
 	private ObjectProperty<Locale> locale = new SimpleObjectProperty<>();
 
-	public final ObjectProperty<String> themeProperty() {
+	public final ObjectProperty<Theme> themeProperty() {
 		return this.theme;
 	}
 
-	public final String getTheme() {
+	public final Theme getTheme() {
 		return this.themeProperty().get();
 	}
 
-	public final void setTheme(final String theme) {
+	public final void setTheme(final Theme theme) {
 		this.themeProperty().set(theme);
 	}
 

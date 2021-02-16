@@ -37,13 +37,14 @@ public class Preferences {
 		FileUtils.writeStringToFile(PREFS_FILE, jsonString, StandardCharsets.UTF_8);
 	}
 	
+	// aquí pones las propiedades que quieres persistir
+
+	// en el constructor ponemos la configuración por defecto
 	public Preferences() {
 		setTheme("Dark");
 		setLocale(new Locale("es"));
 	}
-	
-	// aquí pones las propiedades que quieres persistir
-
+		
 	private ObjectProperty<String> theme = new SimpleObjectProperty<>();
 	private ObjectProperty<Locale> locale = new SimpleObjectProperty<>();
 

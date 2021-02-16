@@ -1,5 +1,7 @@
 package dad.javafx.preferencias;
 
+import java.util.Locale;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -17,6 +19,7 @@ public class App extends Application {
 	@Override
 	public void init() throws Exception {
 		preferences = Preferences.load();
+		Locale.setDefault(preferences.getLocale());
 		super.init();
 	}
 	

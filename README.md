@@ -1,2 +1,2 @@
 # Preferencias
- Ejemplo de gestión de preferencias en una aplicación JavaFX
+ Gestión de preferencias en JavaFX
